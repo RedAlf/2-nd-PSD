@@ -25,6 +25,10 @@ body {
 }
 
 .header {
+    background: white;
+}
+
+.topBar {
     background-color: #8cc34b;
     min-height: 90px;
     min-width: 100%;
@@ -120,7 +124,6 @@ p {
     display: flex;
     text-align: center;
     justify-content: center;
-    background: white;
     width: 100%;
     min-height: 465px;
     margin-bottom: 80px;
@@ -186,6 +189,10 @@ p {
             margin-right: 20px;
             margin-bottom: 20px;
 
+            .shadow {
+                box-shadow: 0px 5px 5px rgba(122,122,122,0.5);
+            }
+
             .img {
                 min-width: 300px;
                 min-height: 170px;
@@ -225,12 +232,18 @@ p {
 
                 .box {
                     display: block;
-                    min-width: 14px;
-                    min-height: 14px;
+                    min-width: 18px;
+                    min-height: 18px;
                     background: white;
                     border: 2px solid #727272;
                     border-radius: 3px;
                     margin-right: 10px;
+
+                    .check {
+                        background: url(./img/check.png) no-repeat 50% 50%;
+                        min-width: 18px;
+                        min-height: 18px;
+                    }
                 }
             }
         }
@@ -304,5 +317,24 @@ p {
         text-align: center;
         width: 515px;
         height: 100%;
+    }
+}
+
+.checked {
+    transition: opacity 2s 0.5s;
+    opacity: 0;
+
+    div.text {
+        background: #edf5e3 !important;
+    }
+
+    div.checkBox {
+        background: #e7efdb !important;
+    }
+
+    div.box {
+        background: #acd37e !important;
+        color: #acd37e !important;
+        border-color: #acd37e !important;
     }
 }
